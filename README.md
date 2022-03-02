@@ -2,8 +2,7 @@
 The purpose of this script is to export and import Custom Apps 
 
 #### Features
- - ./sdwan_clone_apps.py can be used to export Custom Apps (with Global Prefixes) and also import them (moving to a new tenant)
- 
+ - ./sdwan_clone_apps.py can be used to export Custom Apps (with Global Prefixes) and also import them for example moving to a new tenant
 
 #### License
 MIT
@@ -20,13 +19,13 @@ MIT
 ### Examples of usage:
  Please generate your API token and add it to cloudgenix_settings.py
  
- - Use the ./sdwan_clone_apps.py and enter get to retrive all Custom Apps and Global Prefixies
+ - Use the ./sdwan_clone_apps.py and enter get when prompted. This will retrive all Custom Apps and Global Prefixies then export them to /apps-data as a json file. 
  1. ./sdwan_clone_apps.py
-      - Do you want to get or deploy custom Apps (get or deploy)?
+      - Do you want to get or deploy custom Apps (get or deploy)?get
 
- - Use the ./sdwan_clone_apps.py and enter deploy. Will take the data exported in your /apps-data directory from step 1 and deploy it (if you want to do this to a new tenant change your auth token)
+ - Use the ./sdwan_clone_apps.py and enter deploy when promoted. This will take the data exported in your /apps-data directory from step 1 and deploy it (if you want to do this to a new tenant change your auth token)
  1. ./sdwan_clone_apps.py
-      - Do you want to get or deploy custom Apps (get or deploy)?
+      - Do you want to get or deploy custom Apps (get or deploy)?deploy
  
 ### Caveats and known issues:
  - This is a PREVIEW release, hiccups to be expected. Please file issues on Github for any problems.
